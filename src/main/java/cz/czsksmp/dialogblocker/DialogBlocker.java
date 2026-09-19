@@ -31,10 +31,6 @@ public class DialogBlocker implements ClientModInitializer {
             return false;
         }
         String className = screen.getClass().getName().toLowerCase();
-        // Check if screen is a modern Dialog screen (e.g. ViaFabricPlus or custom dialog screens)
-        if (className.contains("dialog") || className.contains("showdialog")) {
-            return true;
-        }
-        return false;
+        return className.contains("dialog") || className.contains("showdialog");
     }
 }
