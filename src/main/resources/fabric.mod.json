@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "dialogblocker",
+  "version": "${version}",
+  "name": "Dialog Blocker",
+  "description": "Client-side mod blocking modern Dialog GUIs on 1.20.1 clients connecting via ViaFabric/ViaFabricPlus.",
+  "authors": [
+    "czsksmp"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cz.czsksmp.dialogblocker.DialogBlocker"
+    ]
+  },
+  "mixins": [
+    "dialogblocker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
